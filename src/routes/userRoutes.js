@@ -15,9 +15,9 @@ router.post(
       contactNumber: Joi.string().required(),
       email: Joi.string().email().required(), // Validate email format
       preferredRole: Joi.string().required(),
-      playerInformation: Joi.string().required(),
+      playerInformation: Joi.string().optional(),
       bowlingType: Joi.string().required(),
-      specialSkills: Joi.string().required(),
+      specialSkills: Joi.string().optional(),
       jerseySize: Joi.string().required(),
       medicalConditions: Joi.string().required(),
       emergencyContactName: Joi.string().required(),
